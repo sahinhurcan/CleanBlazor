@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+
+    <id>sahinhurcan.CleanBlazor</id>
+    <version>0.0.1</version>
+    <title>Clean Blazor Template</title>
+    <authors>sahinhurcan</authors>
+    <description>Clean Blazor Template for .NET.</description>
+    <summary>
+      This is a solution template for creating a Blazor WebAssembly application hosted on ASP.NET Core and following the principles of Clean Architecture.
+    </summary>
+    <releaseNotes>
+      initial release
+    </releaseNotes>
+
+    <projectUrl>https://github.com/sahinhurcan/CleanBlazor</projectUrl>
+    <repository type="git" url="https://github.com/sahinhurcan/CleanBlazor.git" branch="main" />
+
+    <license type="expression">MIT</license>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <tags>clean-architecture project template csharp dotnet blazor</tags>
+    <icon>icon.png</icon>
+    <readme>README.md</readme>
+
+    <packageTypes>
+      <packageType name="Template" />
+    </packageTypes>
+
+  </metadata>
+
+  <files>
+    <file src=".template.config\icon.png" />
+    <file src="README.md" />
+    <file src=".\**" target="content" exclude=".github\workflows\package.yml;**\bin\**;**\obj\**;**\.vs\**;**\.vscode\**;**\wwwroot\dist\**;content\Directory.Build.*;**\.git\**;" />
+  </files>
+
+</package>
