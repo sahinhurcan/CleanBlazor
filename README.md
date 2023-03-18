@@ -47,4 +47,4 @@ dotnet ef migrations add "Initial" --startup-project ..\WebUI\Server
 Review the [Entity Framework Core tools reference - .NET Core CLI | Microsoft Docs](https://learn.microsoft.com/en-us/ef/core/cli/dotnet) to learn more.
 
 ## License
-This project is licensed with the [MIT license](https://github.com/sahinhurcan/CleanBlazor/blob/main/LICENSE).
+This project is licensed with the [MIT license](https://github.com/sahinhurcan/CleanBlazor/blob/master/LICENSE).

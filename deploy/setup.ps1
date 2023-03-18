@@ -39,7 +39,7 @@ function CreateWorkloadIdentity {
   $credential = @{
     name="$ProjectName";
     issuer="https://token.actions.githubusercontent.com";
-    subject="repo:${GitHubOrganisationName}/${GitHubRepositoryName}:ref:refs/heads/main";
+    subject="repo:${GitHubOrganisationName}/${GitHubRepositoryName}:ref:refs/heads/master";
     audiences=@("api://AzureADTokenExchange")
   } | ConvertTo-Json
   

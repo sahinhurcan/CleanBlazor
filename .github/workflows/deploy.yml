@@ -43,7 +43,7 @@ jobs:
        with:
          deploymentName: ${{ github.run_number }}
          resourceGroupName: ${{ inputs.resourceGroupName }}
-         template: ./deploy/main.bicep
+         template: ./deploy/master.bicep
          parameters: >
            environmentType=${{ inputs.environmentType }}
            sqlServerAdministratorLogin=${{ inputs.sqlServerAdministratorLogin }}
@@ -55,7 +55,7 @@ jobs:
        with:
          failOnStdErr: false
          resourceGroupName: ${{ inputs.resourceGroupName }}
-         template: ./deploy/main.bicep
+         template: ./deploy/master.bicep
          parameters: >
            environmentType=${{ inputs.environmentType }}
            sqlServerAdministratorLogin=${{ inputs.sqlServerAdministratorLogin }}
@@ -86,7 +86,7 @@ jobs:
         failOnStdErr: false
         deploymentName: ${{ github.run_number }}
         resourceGroupName: ${{ inputs.resourceGroupName }}
-        template: ./deploy/main.bicep
+        template: ./deploy/master.bicep
         parameters: >
            environmentType=${{ inputs.environmentType }}
            sqlServerAdministratorLogin=${{ inputs.sqlServerAdministratorLogin }}
