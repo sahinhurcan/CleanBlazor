@@ -4,7 +4,7 @@ using CleanBlazor.Application.Common.Services.Identity;
 namespace CleanBlazor.Application.Common.Behaviours;
 
 public class LoggingBehaviour<TRequest>
-    : IRequestPreProcessor<TRequest> where TRequest : notnull
+    : IRequestPreProcessor<TRequest> where TRequest : notnull 
 {
     private readonly ILogger _logger;
     private readonly ICurrentUser _currentUser;
